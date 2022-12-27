@@ -1,0 +1,11 @@
+[
+    {
+        "id" : 1001,
+        "cardColor" : Color.green,
+        "name" : "Vancouver",
+        "ticketsPrice" : 120,
+        "foodPrice" : 120,
+        "apartmentPrice" : 120,
+        "entertainmentPrice" : 120,
+    }
+]

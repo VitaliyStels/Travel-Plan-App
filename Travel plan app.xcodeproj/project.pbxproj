@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DCB9829585B6800560A1B /* RemoveIcon.swift */; };
+		BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B029579E6900B281EC /* ManageTripsCard.swift */; };
+		BAAC51B32957A23A00B281EC /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B22957A23A00B281EC /* InfoCard.swift */; };
+		BADC87CD2953A1C300285C34 /* Travel_plan_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87CC2953A1C300285C34 /* Travel_plan_appApp.swift */; };
+		BADC87CF2953A1C300285C34 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87CE2953A1C300285C34 /* MainView.swift */; };
+		BADC87D12953A1C900285C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADC87D02953A1C900285C34 /* Assets.xcassets */; };
+		BADC87D42953A1C900285C34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADC87D32953A1C900285C34 /* Preview Assets.xcassets */; };
+		BADC87DB2953B76600285C34 /* CreateTripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87DA2953B76600285C34 /* CreateTripCard.swift */; };
+		BADC87DD2953B79F00285C34 /* TravelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87DC2953B79F00285C34 /* TravelCard.swift */; };
+		BADC87DF2953B81800285C34 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87DE2953B81800285C34 /* Trip.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA9DCB9829585B6800560A1B /* RemoveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveIcon.swift; sourceTree = "<group>"; };
+		BAAC51B029579E6900B281EC /* ManageTripsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTripsCard.swift; sourceTree = "<group>"; };
+		BAAC51B22957A23A00B281EC /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
+		BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel plan app 0.0.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADC87CC2953A1C300285C34 /* Travel_plan_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_plan_appApp.swift; sourceTree = "<group>"; };
+		BADC87CE2953A1C300285C34 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BADC87D02953A1C900285C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BADC87D32953A1C900285C34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BADC87DA2953B76600285C34 /* CreateTripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripCard.swift; sourceTree = "<group>"; };
+		BADC87DC2953B79F00285C34 /* TravelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCard.swift; sourceTree = "<group>"; };
+		BADC87DE2953B81800285C34 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BADC87C62953A1C300285C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAAC51AD29579DEB00B281EC /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87DC2953B79F00285C34 /* TravelCard.swift */,
+				BA9DCB9829585B6800560A1B /* RemoveIcon.swift */,
+				BADC87DA2953B76600285C34 /* CreateTripCard.swift */,
+				BAAC51B029579E6900B281EC /* ManageTripsCard.swift */,
+				BAAC51B22957A23A00B281EC /* InfoCard.swift */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		BAAC51AE29579E0000B281EC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87DE2953B81800285C34 /* Trip.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BAAC51AF29579E1100B281EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87CE2953A1C300285C34 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BADC87C02953A1C300285C34 = {
+			isa = PBXGroup;
+			children = (
+				BADC87CB2953A1C300285C34 /* Travel plan app */,
+				BADC87CA2953A1C300285C34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BADC87CA2953A1C300285C34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BADC87CB2953A1C300285C34 /* Travel plan app */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87CC2953A1C300285C34 /* Travel_plan_appApp.swift */,
+				BAAC51AF29579E1100B281EC /* Views */,
+				BAAC51AE29579E0000B281EC /* Classes */,
+				BAAC51AD29579DEB00B281EC /* Cards */,
+				BADC87D02953A1C900285C34 /* Assets.xcassets */,
+				BADC87D22953A1C900285C34 /* Preview Content */,
+			);
+			path = "Travel plan app";
+			sourceTree = "<group>";
+		};
+		BADC87D22953A1C900285C34 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BADC87D32953A1C900285C34 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BADC87C82953A1C300285C34 /* Travel plan app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BADC87D72953A1C900285C34 /* Build configuration list for PBXNativeTarget "Travel plan app" */;
+			buildPhases = (
+				BADC87C52953A1C300285C34 /* Sources */,
+				BADC87C62953A1C300285C34 /* Frameworks */,
+				BADC87C72953A1C300285C34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Travel plan app";
+			productName = "Travel plan app";
+			productReference = BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BADC87C12953A1C300285C34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BADC87C82953A1C300285C34 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = BADC87C42953A1C300285C34 /* Build configuration list for PBXProject "Travel plan app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BADC87C02953A1C300285C34;
+			productRefGroup = BADC87CA2953A1C300285C34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BADC87C82953A1C300285C34 /* Travel plan app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BADC87C72953A1C300285C34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC87D42953A1C900285C34 /* Preview Assets.xcassets in Resources */,
+				BADC87D12953A1C900285C34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BADC87C52953A1C300285C34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BADC87DF2953B81800285C34 /* Trip.swift in Sources */,
+				BADC87CF2953A1C300285C34 /* MainView.swift in Sources */,
+				BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */,
+				BADC87DB2953B76600285C34 /* CreateTripCard.swift in Sources */,
+				BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */,
+				BADC87CD2953A1C300285C34 /* Travel_plan_appApp.swift in Sources */,
+				BAAC51B32957A23A00B281EC /* InfoCard.swift in Sources */,
+				BADC87DD2953B79F00285C34 /* TravelCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BADC87D52953A1C900285C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BADC87D62953A1C900285C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BADC87D82953A1C900285C34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Travel plan app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
+				PRODUCT_NAME = "Travel plan app 0.0.3";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BADC87D92953A1C900285C34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"Travel plan app/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
+				PRODUCT_NAME = "Travel plan app 0.0.3";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BADC87C42953A1C300285C34 /* Build configuration list for PBXProject "Travel plan app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC87D52953A1C900285C34 /* Debug */,
+				BADC87D62953A1C900285C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BADC87D72953A1C900285C34 /* Build configuration list for PBXNativeTarget "Travel plan app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADC87D82953A1C900285C34 /* Debug */,
+				BADC87D92953A1C900285C34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BADC87C12953A1C300285C34 /* Project object */;
+}
