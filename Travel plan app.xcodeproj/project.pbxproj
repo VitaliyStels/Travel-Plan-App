@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA36DFE8295C62E400A66E9B /* HalloCard.swift */; };
 		BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DCB9829585B6800560A1B /* RemoveIcon.swift */; };
 		BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B029579E6900B281EC /* ManageTripsCard.swift */; };
 		BAAC51B32957A23A00B281EC /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B22957A23A00B281EC /* InfoCard.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA36DFE8295C62E400A66E9B /* HalloCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloCard.swift; sourceTree = "<group>"; };
 		BA9DCB9829585B6800560A1B /* RemoveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveIcon.swift; sourceTree = "<group>"; };
 		BAAC51B029579E6900B281EC /* ManageTripsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTripsCard.swift; sourceTree = "<group>"; };
 		BAAC51B22957A23A00B281EC /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				BADC87DC2953B79F00285C34 /* TravelCard.swift */,
+				BA36DFE8295C62E400A66E9B /* HalloCard.swift */,
 				BA9DCB9829585B6800560A1B /* RemoveIcon.swift */,
 				BADC87DA2953B76600285C34 /* CreateTripCard.swift */,
 				BAAC51B029579E6900B281EC /* ManageTripsCard.swift */,
@@ -181,6 +184,7 @@
 			files = (
 				BADC87DF2953B81800285C34 /* Trip.swift in Sources */,
 				BADC87CF2953A1C300285C34 /* MainView.swift in Sources */,
+				BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */,
 				BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */,
 				BADC87DB2953B76600285C34 /* CreateTripCard.swift in Sources */,
 				BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */,

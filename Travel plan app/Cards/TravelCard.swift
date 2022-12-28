@@ -15,7 +15,6 @@ struct TravelCard: View {
     var cardFoodPrice : Int
     var cardApartmentPrice : Int
     var cardEntertainmentPrice : Int
-    var managingMode : Bool
     
     var body: some View {
         ZStack {
@@ -73,6 +72,6 @@ struct TravelCard: View {
 
 struct TravelCard_Previews: PreviewProvider {
     static var previews: some View {
-        TravelCard(cardColor: Color.black, cardName: "Card Name City", cardTicketsPrice: 10, cardFoodPrice: 100, cardApartmentPrice: 1500, cardEntertainmentPrice: 240, managingMode: false)
+        TravelCard(cardColor: Color.black, cardName: "Card Name City", cardTicketsPrice: 10, cardFoodPrice: 100, cardApartmentPrice: 1500, cardEntertainmentPrice: 240)
     }
 }
