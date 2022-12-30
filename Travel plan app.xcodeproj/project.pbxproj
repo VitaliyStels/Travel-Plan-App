@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA1AF0E2295F0BEE0082D324 /* TripTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */; };
 		BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA36DFE8295C62E400A66E9B /* HalloCard.swift */; };
 		BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DCB9829585B6800560A1B /* RemoveIcon.swift */; };
 		BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B029579E6900B281EC /* ManageTripsCard.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTotals.swift; sourceTree = "<group>"; };
 		BA36DFE8295C62E400A66E9B /* HalloCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloCard.swift; sourceTree = "<group>"; };
 		BA9DCB9829585B6800560A1B /* RemoveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveIcon.swift; sourceTree = "<group>"; };
 		BAAC51B029579E6900B281EC /* ManageTripsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTripsCard.swift; sourceTree = "<group>"; };
@@ -46,12 +48,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA1AF0E3295F0E920082D324 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				BA9DCB9829585B6800560A1B /* RemoveIcon.swift */,
+				BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		BAAC51AD29579DEB00B281EC /* Cards */ = {
 			isa = PBXGroup;
 			children = (
 				BADC87DC2953B79F00285C34 /* TravelCard.swift */,
 				BA36DFE8295C62E400A66E9B /* HalloCard.swift */,
-				BA9DCB9829585B6800560A1B /* RemoveIcon.swift */,
+				BA1AF0E3295F0E920082D324 /* Details */,
 				BADC87DA2953B76600285C34 /* CreateTripCard.swift */,
 				BAAC51B029579E6900B281EC /* ManageTripsCard.swift */,
 				BAAC51B22957A23A00B281EC /* InfoCard.swift */,
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADC87DF2953B81800285C34 /* Trip.swift in Sources */,
+				BA1AF0E2295F0BEE0082D324 /* TripTotals.swift in Sources */,
 				BADC87CF2953A1C300285C34 /* MainView.swift in Sources */,
 				BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */,
 				BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */,
@@ -319,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel plan app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -332,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
 				PRODUCT_NAME = "Travel plan app 0.0.3";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -347,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Travel plan app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -360,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
 				PRODUCT_NAME = "Travel plan app 0.0.3";
 				SWIFT_EMIT_LOC_STRINGS = YES;

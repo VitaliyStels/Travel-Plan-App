@@ -74,6 +74,8 @@ struct MainView: View {
                                         
                                     }
                                     .animation(.easeInOut(duration: 0.1), value: managingMode)
+                                
+                            TripTotals(tripTotals: Trip.ticketsPrice + Trip.foodPrice + Trip.apartmentPrice + Trip.entertainmentPrice)
                             
                         }
 
