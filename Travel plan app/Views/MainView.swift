@@ -10,6 +10,16 @@ import Foundation
 
 
 struct MainView: View {
+    @State var creatingNewTrip = false
+    @State var creatingCardNameField = ""
+    @State var creatingCardTicketsPriceField = ""
+    @State var creatingCardFoodPriceField = ""
+    @State var creatingCardApartmentPriceField = ""
+    @State var creatingCardEntertainmentPriceField = ""
+    @State var creatingCardCurrencyField = ""
+    @State var managingMode = false
+    @State var tripSpendings = 0
+    
     @State var data : [Trip]
     @State var halloWindowShows : Bool
     
@@ -23,17 +33,8 @@ struct MainView: View {
         }
         data = []
         halloWindowShows = true
-
     }
     
-    @State var creatingNewTrip = false
-    @State var creatingCardNameField = ""
-    @State var creatingCardTicketsPriceField = ""
-    @State var creatingCardFoodPriceField = ""
-    @State var creatingCardApartmentPriceField = ""
-    @State var creatingCardEntertainmentPriceField = ""
-    @State var minimalMode = false
-    @State var managingMode = false
     
     
     func removeTrip(withId: String) {
@@ -49,6 +50,14 @@ struct MainView: View {
         }
     }
     
+    func clearCreatingMenu() {
+        creatingCardNameField = ""
+        creatingCardTicketsPriceField = ""
+        creatingCardFoodPriceField = ""
+        creatingCardApartmentPriceField = ""
+        creatingCardEntertainmentPriceField = ""
+    }
+    
     var body: some View {
         if !creatingNewTrip {
             ScrollView {
@@ -58,10 +67,9 @@ struct MainView: View {
                    
                     
                     ForEach(data.reversed()) { Trip in
-                        
                         ZStack {
                             
-                            TravelCard(cardName: Trip.name, cardTicketsPrice: Trip.ticketsPrice, cardFoodPrice: Trip.foodPrice, cardApartmentPrice: Trip.apartmentPrice, cardEntertainmentPrice: Trip.entertainmentPrice)
+                            TravelCard(cardName: Trip.name, cardTicketsPrice: Trip.ticketsPrice, cardFoodPrice: Trip.foodPrice, cardApartmentPrice: Trip.apartmentPrice, cardEntertainmentPrice: Trip.entertainmentPrice, cardCurrency: Trip.choosedCurrency)
                              
                                 RemoveIcon()
                                     .opacity(managingMode ? 1 : 0)
@@ -74,13 +82,14 @@ struct MainView: View {
                                         
                                     }
                                     .animation(.easeInOut(duration: 0.1), value: managingMode)
-                                
-                            TripTotals(tripTotals: Trip.ticketsPrice + Trip.foodPrice + Trip.apartmentPrice + Trip.entertainmentPrice)
+                            
+                            
+                            TripTotals(tripCurrency: Trip.choosedCurrency, tripTotals: Trip.ticketsPrice + Trip.foodPrice + Trip.apartmentPrice + Trip.entertainmentPrice)
                             
                         }
-
                     }.padding(.leading, 10)
                         .padding(.bottom, 10)
+                        
 
                     
                     if halloWindowShows {
@@ -97,13 +106,10 @@ struct MainView: View {
                             managingMode = false
                             creatingNewTrip.toggle()
                         }
-                        .frame(height: minimalMode ? 200 : 300)
-                        .animation(.easeIn, value: minimalMode)
                         .cornerRadius(30)
                         
                         ManageTripsCard()
-                            .frame(height: minimalMode ? 200 : 300)
-                            .animation(.easeIn, value: minimalMode)
+
                             .cornerRadius(30)
                             .onTapGesture {
                                 managingMode.toggle()
@@ -113,22 +119,16 @@ struct MainView: View {
                         
                 }
                 
-                InfoCard()
-                    
-                    .frame(height: minimalMode ? 50 : 100)
-                    .onTapGesture {
-//                        minimalMode.toggle()
-                    }
+                StatisticsCard(countOfTrips: data.count)
+                
             }
         }
         
         else {
-            
-                
-            
             VStack(spacing: 14) {
                 Spacer()
                 
+                TextField("Choose currency (leave clear to use $)", text: $creatingCardCurrencyField)
                 TextField("Card Name", text: $creatingCardNameField)
                 TextField("tickets Price", text: $creatingCardTicketsPriceField)
                 TextField("food Price", text: $creatingCardFoodPriceField)
@@ -140,27 +140,30 @@ struct MainView: View {
                 HStack(spacing: 34) {
                     Button("Cancel") {
                         creatingNewTrip.toggle()
-                        creatingCardNameField = ""
-                        creatingCardTicketsPriceField = ""
-                        creatingCardFoodPriceField = ""
-                        creatingCardApartmentPriceField = ""
-                        creatingCardEntertainmentPriceField = ""
+                        clearCreatingMenu()
                     }
                     
                     Spacer()
                     
                     Button("Create") {
                         let uuid = UUID().uuidString
-                        data.append(Trip(id: uuid, name: creatingCardNameField, ticketsPrice: Int(creatingCardTicketsPriceField) ?? 0, foodPrice: Int(creatingCardFoodPriceField) ?? 0, apartmentPrice: Int(creatingCardApartmentPriceField) ?? 0, entertainmentPrice: Int(creatingCardEntertainmentPriceField) ?? 0))
-                        creatingNewTrip.toggle()
-                        saveData()
-                        print("Trip was created: \(uuid)")
+                        if creatingCardNameField != "" {
+                            if creatingCardCurrencyField == "" {
+                                creatingCardCurrencyField = "$"
+                            }
+                            data.append(Trip(id: uuid, name: creatingCardNameField, ticketsPrice: Int(creatingCardTicketsPriceField) ?? 0, foodPrice: Int(creatingCardFoodPriceField) ?? 0, apartmentPrice: Int(creatingCardApartmentPriceField) ?? 0, entertainmentPrice: Int(creatingCardEntertainmentPriceField) ?? 0, choosedCurrency: creatingCardCurrencyField))
+                            creatingNewTrip.toggle()
+                            saveData()
+                            print("Trip was created: \(uuid)")
+                            clearCreatingMenu()
+                        }
+                        
                     }
                     
                 }
             }
             .frame(width: 330)
-            
+        }
         }
     }
 
@@ -170,4 +173,4 @@ struct ContentView_Previews: PreviewProvider {
         MainView()
     }
 }
-}
+

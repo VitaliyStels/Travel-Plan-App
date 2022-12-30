@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct TravelCard: View {
-    var cardColor : Color = Color.yellow
+    let cardColor : Color = Color.yellow
     var cardName : String
     var cardSystemImage = "airplane"
     var cardTicketsPrice : Int
     var cardFoodPrice : Int
     var cardApartmentPrice : Int
     var cardEntertainmentPrice : Int
+    var cardCurrency : String
     
     var body: some View {
         ZStack {
@@ -25,8 +26,6 @@ struct TravelCard: View {
             .cornerRadius(30)
         
         VStack {
-            
-            
             HStack {
                 Image
                     .init(systemName: cardSystemImage)
@@ -43,24 +42,15 @@ struct TravelCard: View {
                     Text(cardName)
                         .foregroundColor(.white)
                         .font(.system(size: 25, weight: .bold))
-                    Text("Tickets: \(cardTicketsPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
-                    Text("Food: \(cardFoodPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
-                    Text("Apartment: \(cardApartmentPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
-                    Text("Entertainment: \(cardEntertainmentPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
-
+                    
+                    CommonText(commonTextsText: "Tickets: \(cardCurrency)\(cardTicketsPrice)")
+                    CommonText(commonTextsText: "Food: \(cardCurrency)\(cardFoodPrice)")
+                    CommonText(commonTextsText: "Apartment: \(cardCurrency)\(cardApartmentPrice)")
+                    CommonText(commonTextsText: "Entertainment: \(cardCurrency)\(cardEntertainmentPrice)")
                     
                 }.padding()
                 Spacer()
             }.frame(width:300)
-            
             
             Spacer()
             
@@ -72,6 +62,6 @@ struct TravelCard: View {
 
 struct TravelCard_Previews: PreviewProvider {
     static var previews: some View {
-        TravelCard(cardColor: Color.black, cardName: "Card Name City", cardTicketsPrice: 10, cardFoodPrice: 100, cardApartmentPrice: 1500, cardEntertainmentPrice: 240)
+        TravelCard(cardName: "Card Name City", cardTicketsPrice: 10, cardFoodPrice: 100, cardApartmentPrice: 1500, cardEntertainmentPrice: 240, cardCurrency: "$")
     }
 }

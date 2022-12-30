@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct HalloCard: View {
-    var cardColors : [Color] = [Color.purple, Color.green, Color.yellow, Color.black]
+    private let cardColors : [Color] = [Color.purple, Color.green, Color.yellow, Color.black, Color.gray, Color.blue, Color.brown, Color.indigo]
     
-    @State var cardColor : Color = Color.purple
+    @State private var cardColor : Color = Color.purple
     @State var cardWasPressed = false
     var cardName : String = "Hallo!"
     var cardSystemImage = "hand.raised"
@@ -45,24 +45,15 @@ struct HalloCard: View {
                     Text(cardName)
                         .foregroundColor(.white)
                         .font(.system(size: 25, weight: .bold))
-                    Text("Tickets: \(cardTicketsPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
+                    
+                    CommonText(commonTextsText: "Tickets: \(cardTicketsPrice)")
                         .opacity(0.80)
-                    Text("Food: \(cardFoodPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
+                    CommonText(commonTextsText: "Food: \(cardFoodPrice)")
                         .opacity(0.60)
-                    Text("Apartment: \(cardApartmentPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
+                    CommonText(commonTextsText: "Apartment: \(cardApartmentPrice)")
                         .opacity(0.40)
-                    Text("Entertainment: \(cardEntertainmentPrice)")
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
+                    CommonText(commonTextsText: "Entertainment: \(cardEntertainmentPrice)")
                         .opacity(0.20)
-                    
-                    
                     
                     HStack {
                         Text("You can create or delete trip with buttons below")
@@ -74,8 +65,7 @@ struct HalloCard: View {
                             .foregroundColor(.white)
                             .font(.system(size: 25))
                             .offset(y: cardWasPressed ? 20 : 0)
-                            .animation(.easeIn(duration: 0.2).repeatCount(5), value: cardWasPressed)
-                            
+                            .animation(.easeIn(duration: 0.2).repeatCount(3), value: cardWasPressed)
                     }
                     
                     Spacer()
@@ -88,7 +78,6 @@ struct HalloCard: View {
                 Spacer()
             }.frame(width:300)
             
-            
             Spacer()
             
         }.frame(width: 300, height: 400)
@@ -99,9 +88,10 @@ struct HalloCard: View {
         .onTapGesture {
             let choosedColor = cardColors.randomElement()
             withAnimation(.spring()) {
-            
             cardWasPressed.toggle()
-            cardColor = choosedColor ?? Color.purple
+                if choosedColor != cardColor {
+                    cardColor = choosedColor ?? Color.purple
+                }
             }
         }
     }

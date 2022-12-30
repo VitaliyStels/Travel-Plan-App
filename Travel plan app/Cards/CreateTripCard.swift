@@ -22,9 +22,7 @@ struct CreateTripCard: View {
                 .resizable()
                 .frame(width: 110, height: 110)
                 .colorInvert()
-            Text("Add trip")
-                .foregroundColor(.white)
-                .font(.system(size: 18))
+            CommonText(commonTextsText: "Add trip")
         
         }
             
