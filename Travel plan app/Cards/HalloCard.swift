@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct HalloCard: View {
-    var cardColors : [Color] = [Color.purple, Color.green, Color.yellow, Color.black, Color.gray, Color.blue, Color.brown, Color.indigo]
+    private let cardColors : [Color] = [Color.purple, Color.green, Color.yellow, Color.black, Color.gray, Color.blue, Color.brown, Color.indigo]
     
-    @State var cardColor : Color = Color.purple
+    @State private var cardColor : Color = Color.purple
     @State var cardWasPressed = false
     var cardName : String = "Hallo!"
     var cardSystemImage = "hand.raised"

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TripTotals: View {
+    var tripCurrency : String
     var tripTotals : Int
     var body: some View {
         ZStack {
@@ -18,12 +19,7 @@ struct TripTotals: View {
                     
                     
                     HStack {
-//                        Image
-//                            .init(systemName: "trash.circle")
-//                            .resizable()
-//                            .frame(width: 40, height: 40)
-//                            .colorInvert()
-                        Text("Total: \(tripTotals)")
+                        Text("Total: \(tripCurrency)\(tripTotals)")
                             .font(.system(size: 22))
                             .fontWeight(.semibold)
                             .foregroundColor(.white)
@@ -41,6 +37,6 @@ struct TripTotals: View {
 
 struct TripTotals_Previews: PreviewProvider {
     static var previews: some View {
-        TripTotals(tripTotals: 0)
+        TripTotals(tripCurrency: "€", tripTotals: 0)
     }
 }

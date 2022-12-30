@@ -10,22 +10,21 @@ import Foundation
 
 class Trip: Identifiable, Codable {
     var id : String
-//    var cardColor : Color = Color.green
     var name : String
     var ticketsPrice : Int
     var foodPrice : Int
     var apartmentPrice : Int
     var entertainmentPrice : Int
+    var choosedCurrency : String
 
-//    init(id : String, cardColor : Color, name: String, ticketsPrice: Int, foodPrice: Int, apartmentPrice: Int, entertainmentPrice: Int){
-    init(id : String, name: String, ticketsPrice: Int, foodPrice: Int, apartmentPrice: Int, entertainmentPrice: Int){
+    init(id : String, name: String, ticketsPrice: Int, foodPrice: Int, apartmentPrice: Int, entertainmentPrice: Int, choosedCurrency: String){
         self.id = id
-//        self.cardColor = cardColor
         self.name = name
         self.ticketsPrice = ticketsPrice
         self.foodPrice = foodPrice
         self.apartmentPrice = apartmentPrice
         self.entertainmentPrice = entertainmentPrice
+        self.choosedCurrency = choosedCurrency
     }
 
 }
