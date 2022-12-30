@@ -11,15 +11,18 @@ import Foundation
 
 struct MainView: View {
     @State var data : [Trip]
+    @State var halloWindowShows : Bool
     
     init() {
         if let rawData = UserDefaults.standard.data(forKey: "SavedData") {
             if let decoded = try? JSONDecoder().decode([Trip].self, from: rawData) {
                 data = decoded
+                halloWindowShows = false
                 return
             }
         }
         data = []
+        halloWindowShows = true
 
     }
     
@@ -51,11 +54,14 @@ struct MainView: View {
             ScrollView {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
+                    
+                   
+                    
                     ForEach(data.reversed()) { Trip in
                         
                         ZStack {
                             
-                            TravelCard(cardName: Trip.name, cardTicketsPrice: Trip.ticketsPrice, cardFoodPrice: Trip.foodPrice, cardApartmentPrice: Trip.apartmentPrice, cardEntertainmentPrice: Trip.entertainmentPrice, managingMode: managingMode)
+                            TravelCard(cardName: Trip.name, cardTicketsPrice: Trip.ticketsPrice, cardFoodPrice: Trip.foodPrice, cardApartmentPrice: Trip.apartmentPrice, cardEntertainmentPrice: Trip.entertainmentPrice)
                              
                                 RemoveIcon()
                                     .opacity(managingMode ? 1 : 0)
@@ -68,11 +74,20 @@ struct MainView: View {
                                         
                                     }
                                     .animation(.easeInOut(duration: 0.1), value: managingMode)
+                                
+                            TripTotals(tripTotals: Trip.ticketsPrice + Trip.foodPrice + Trip.apartmentPrice + Trip.entertainmentPrice)
                             
                         }
 
                     }.padding(.leading, 10)
                         .padding(.bottom, 10)
+
+                    
+                    if halloWindowShows {
+                        HalloCard()
+                            .padding(.leading, 10)
+                            .padding(.bottom, 10)
+                    }
                 }
             }
             
@@ -102,12 +117,14 @@ struct MainView: View {
                     
                     .frame(height: minimalMode ? 50 : 100)
                     .onTapGesture {
-                        minimalMode.toggle()
+//                        minimalMode.toggle()
                     }
             }
         }
         
         else {
+            
+                
             
             VStack(spacing: 14) {
                 Spacer()
@@ -143,6 +160,7 @@ struct MainView: View {
                 }
             }
             .frame(width: 330)
+            
         }
     }
 
