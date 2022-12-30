@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BA1AF0E2295F0BEE0082D324 /* TripTotals.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */; };
+		BA1AF0E5295F11060082D324 /* StatisticsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AF0E4295F11060082D324 /* StatisticsCard.swift */; };
+		BA1AF0E9295F1D8F0082D324 /* CommonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1AF0E8295F1D8F0082D324 /* CommonText.swift */; };
 		BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA36DFE8295C62E400A66E9B /* HalloCard.swift */; };
 		BA9DCB9929585B6800560A1B /* RemoveIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9DCB9829585B6800560A1B /* RemoveIcon.swift */; };
 		BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B029579E6900B281EC /* ManageTripsCard.swift */; };
-		BAAC51B32957A23A00B281EC /* InfoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAAC51B22957A23A00B281EC /* InfoCard.swift */; };
 		BADC87CD2953A1C300285C34 /* Travel_plan_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87CC2953A1C300285C34 /* Travel_plan_appApp.swift */; };
 		BADC87CF2953A1C300285C34 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADC87CE2953A1C300285C34 /* MainView.swift */; };
 		BADC87D12953A1C900285C34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADC87D02953A1C900285C34 /* Assets.xcassets */; };
@@ -23,11 +24,12 @@
 
 /* Begin PBXFileReference section */
 		BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTotals.swift; sourceTree = "<group>"; };
+		BA1AF0E4295F11060082D324 /* StatisticsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCard.swift; sourceTree = "<group>"; };
+		BA1AF0E8295F1D8F0082D324 /* CommonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonText.swift; sourceTree = "<group>"; };
 		BA36DFE8295C62E400A66E9B /* HalloCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalloCard.swift; sourceTree = "<group>"; };
 		BA9DCB9829585B6800560A1B /* RemoveIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveIcon.swift; sourceTree = "<group>"; };
 		BAAC51B029579E6900B281EC /* ManageTripsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTripsCard.swift; sourceTree = "<group>"; };
-		BAAC51B22957A23A00B281EC /* InfoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCard.swift; sourceTree = "<group>"; };
-		BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel plan app 0.0.3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADC87C92953A1C300285C34 /* Travel plan app 0.0.4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel plan app 0.0.4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADC87CC2953A1C300285C34 /* Travel_plan_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel_plan_appApp.swift; sourceTree = "<group>"; };
 		BADC87CE2953A1C300285C34 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BADC87D02953A1C900285C34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				BA9DCB9829585B6800560A1B /* RemoveIcon.swift */,
 				BA1AF0E1295F0BEE0082D324 /* TripTotals.swift */,
+				BA1AF0E8295F1D8F0082D324 /* CommonText.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -62,10 +65,10 @@
 			children = (
 				BADC87DC2953B79F00285C34 /* TravelCard.swift */,
 				BA36DFE8295C62E400A66E9B /* HalloCard.swift */,
-				BA1AF0E3295F0E920082D324 /* Details */,
 				BADC87DA2953B76600285C34 /* CreateTripCard.swift */,
 				BAAC51B029579E6900B281EC /* ManageTripsCard.swift */,
-				BAAC51B22957A23A00B281EC /* InfoCard.swift */,
+				BA1AF0E4295F11060082D324 /* StatisticsCard.swift */,
+				BA1AF0E3295F0E920082D324 /* Details */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 		BADC87CA2953A1C300285C34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */,
+				BADC87C92953A1C300285C34 /* Travel plan app 0.0.4.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,7 +143,7 @@
 			);
 			name = "Travel plan app";
 			productName = "Travel plan app";
-			productReference = BADC87C92953A1C300285C34 /* Travel plan app 0.0.3.app */;
+			productReference = BADC87C92953A1C300285C34 /* Travel plan app 0.0.4.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADC87DF2953B81800285C34 /* Trip.swift in Sources */,
+				BA1AF0E5295F11060082D324 /* StatisticsCard.swift in Sources */,
 				BA1AF0E2295F0BEE0082D324 /* TripTotals.swift in Sources */,
 				BADC87CF2953A1C300285C34 /* MainView.swift in Sources */,
 				BA36DFE9295C62E400A66E9B /* HalloCard.swift in Sources */,
@@ -201,7 +205,7 @@
 				BADC87DB2953B76600285C34 /* CreateTripCard.swift in Sources */,
 				BAAC51B129579E6900B281EC /* ManageTripsCard.swift in Sources */,
 				BADC87CD2953A1C300285C34 /* Travel_plan_appApp.swift in Sources */,
-				BAAC51B32957A23A00B281EC /* InfoCard.swift in Sources */,
+				BA1AF0E9295F1D8F0082D324 /* CommonText.swift in Sources */,
 				BADC87DD2953B79F00285C34 /* TravelCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +350,7 @@
 				);
 				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
-				PRODUCT_NAME = "Travel plan app 0.0.3";
+				PRODUCT_NAME = "Travel plan app 0.0.4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,7 +378,7 @@
 				);
 				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "ViMin.Travel-plan-app";
-				PRODUCT_NAME = "Travel plan app 0.0.3";
+				PRODUCT_NAME = "Travel plan app 0.0.4";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
